@@ -1,21 +1,11 @@
 ---
 layout: page
-title: 关于
-permalink: /about/
+title: 留言
+permalink: /message/
+published: false
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
-
-
-- 🖥 : A developer 
-
-- ❤️ : Coding
-
-- 📧 : <kfxiaoxia@gmail.com>
-
-- Github: <https://github.com/kfxiaoxia>
-
-<br>
 
 <script src="https://utteranc.es/client.js"
         repo="kfxiaoxia/kfxiaoxia.github.io"
