@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
 <link rel="stylesheet" href="/assets/css/style.css">
 
 <h1 style="font-size: 60; font-weight: bold; color: red;">#Welcome here ...</h1>
@@ -20,3 +21,12 @@ start:  mvi    c,9      ; BDOS function: output string
 msg$:   db    'Hello, world!$'
 end     start
 ```
+
+<script src="https://utteranc.es/client.js"
+        repo="kfxiaoxia/kfxiaoxia.github.io"
+        issue-term="pathname"
+        label="kfxiaoxia.com"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
