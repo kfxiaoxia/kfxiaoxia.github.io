@@ -3,7 +3,6 @@ layout: page
 title: 致谢
 permalink: /thanks/
 published: false
-
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
