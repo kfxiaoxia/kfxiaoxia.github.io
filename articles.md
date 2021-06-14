@@ -1,11 +1,8 @@
 ---
 layout: page
-title: 利器
-permalink: /tools/
+title: 文章
+permalink: /articles/
 published: false
-
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
-
-# 工欲善其事必先利其器
