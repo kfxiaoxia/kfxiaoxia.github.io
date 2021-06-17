@@ -5,7 +5,6 @@ permalink: /thanks/
 published: false
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
 
 
 # 本站构建
