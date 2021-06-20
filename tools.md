@@ -19,3 +19,5 @@ published: true
 5、[BlueStacks – Fastest Android Emulator for PC & Mac](https://www.bluestacks.com/)
 
 6、[The foxy Git Client for Mac](https://www.gitfox.app/)
+
+7、[Database management made easy](https://tableplus.com/)
