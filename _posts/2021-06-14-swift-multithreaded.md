@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Swift 多线程 "
-date:  2021-06-14 15:24:11 +0800
+date: 2021-06-14 15:24:11 +0800
 categories: Swift
 published: true
 ---
+
 <link rel="stylesheet" href="/assets/css/style.css">
 
-
-## 术语
+#### 术语
 
 同步：`【相对于任务而言】`按顺序执行多个任务，在一个线程里按顺序执行，结束顺序是固定的。
 
@@ -18,7 +18,7 @@ published: true
 
 并发：`【相对于队列而言】`多个任务在并行队列里执行，同时执行。
 
-## GCD
+#### GCD
 
 1、串行队列
 
@@ -31,27 +31,32 @@ let q = DispatchQueue(label: "com.example.1")
 ```swift
 let q = DispatchQueue(label: "com.example.2", attributes: .concurrent)
 ```
+
 3、主队列
+
 ```swift
 let main = DispatchQueue.main
 ```
+
 4、全局队列
+
 ```swift
 let global = DispatchQueue.global()
 ```
 
 **队列优先级**
 
-|  名称   | 注释  |
-|  ----  | ----  |
-|.userInteractive  | 和用户交互，优先级最高。场景：界面绘图 |
-|.userInitiated  | 立即发生。场景：用户点击按钮 |
-|.default|默认|
-|.utility|一些计算任务，场景：连续数据处理|
-|.background|后台任务，场景：一些日志，同步服务等|
-|.unspecified|用于兼容旧版API，因为有些旧版API可能会使线程超出QoS范围|
+| 名称             | 注释                                                         |
+| ---------------- | ------------------------------------------------------------ |
+| .userInteractive | 和用户交互，优先级最高。场景：界面绘图                       |
+| .userInitiated   | 立即发生。场景：用户点击按钮                                 |
+| .default         | 默认                                                         |
+| .utility         | 一些计算任务，场景：连续数据处理                             |
+| .background      | 后台任务，场景：一些日志，同步服务等                         |
+| .unspecified     | 用于兼容旧版 API，因为有些旧版 API 可能会使线程超出 QoS 范围 |
 
 5、添加任务
+
 ```swift
 q.async {
     /// 异步执行
@@ -62,6 +67,7 @@ q.sync {
 ```
 
 6、线程死锁
+
 ```swift
 let q = DispatchQueue(label: "com.example.3", attributes: .concurrent)
 q.sync {
@@ -70,11 +76,12 @@ q.sync {
 }
 ```
 
-# DispatchGroup
+#### DispatchGroup
 
-Group管理多个队列
+Group 管理多个队列
 
 执行顺序不确定
+
 ```swift
 let group = DispatchGroup()
 let requestQueue = DispatchQueue(label: "com.example.request", qos: .background)
@@ -87,7 +94,7 @@ calculateQueue.async(group: group) {
     /// 任务
 }
 otherQueue.async(group: group) {
-    /// 
+    ///
 }
 // 任务全部结束,在指定队列通知
 group.notify(queue: .main) {
@@ -96,6 +103,7 @@ group.notify(queue: .main) {
 ```
 
 await() 线程等待，超时时间
+
 ```swift
 let g = DispatchGroup()
 let q = DispatchQueue(label: "com.example.await", attributes: .concurrent)
@@ -113,7 +121,8 @@ if g.wait(timeout: .now() + 6) == .success {
 ```
 
 enter() 和 leave()
-队列里面的任务执行完成之后默认会通知Group, 但是如果任务中还有异步任务需要手动通知Group
+队列里面的任务执行完成之后默认会通知 Group, 但是如果任务中还有异步任务需要手动通知 Group
+
 ```swift
 let g = DispatchGroup()
 let q = DispatchQueue.init(label: "com.ecample.enter_leave")
@@ -162,7 +171,6 @@ q.async {
 }
 ```
 
-
 <script src="https://utteranc.es/client.js"
         repo="kfxiaoxia/kfxiaoxia.github.io"
         issue-term="pathname"
@@ -171,5 +179,3 @@ q.async {
         crossorigin="anonymous"
         async>
 </script>
-
-
