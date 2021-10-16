@@ -107,12 +107,12 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $brand-color;
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    // color: #65D26E;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
@@ -151,12 +151,17 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  color: rgb(133, 207, 23);
   background-color: 011627;
 }
 
 code {
   padding: 1px 5px;
+  color: #D0D2D1;
+  @include relative-font-size(1);
+}
+.language-plaintext {
+  color: black !important;
+  font-weight: 800;
 }
 
 pre {
@@ -253,3 +258,4 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+

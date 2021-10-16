@@ -17,6 +17,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  font-weight: 800;
 
   &,
   &:visited {
@@ -39,7 +40,8 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    font-weight: 600;
+    @include relative-font-size(1.1);
+    font-weight: 800;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -114,6 +116,7 @@
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+  font-weight: 800;
 }
 
 .contact-list,
@@ -127,6 +130,7 @@
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+  font-weight: 600;
 }
 
 .footer-col {
@@ -186,7 +190,8 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.25);
+  font-weight: 800;
 }
 
 .post-list {
@@ -194,7 +199,8 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    // margin-bottom: $spacing-unit;
+    // border: 1px solid red;
   }
 }
 
@@ -206,8 +212,14 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+  font-weight: 600;
 }
 
+.rss-subscribe {
+  margin-top: 32px;
+  @include relative-font-size(0.8);
+  font-weight: 800;
+}
 
 
 /**
@@ -218,9 +230,10 @@
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2.25);
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: 600;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
