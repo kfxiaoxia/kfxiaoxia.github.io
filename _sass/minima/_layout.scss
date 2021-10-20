@@ -41,6 +41,7 @@
     @include relative-font-size(1.1);
     font-weight: 800;
     color: white;
+    background-color: black;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -258,7 +259,7 @@
   @include relative-font-size(2.25);
   letter-spacing: -1px;
   line-height: 1;
-  text-align: center;
+
   margin-top: 30px;
 
   @include media-query($on-laptop) {
@@ -270,6 +271,7 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  color: rgba(0, 0, 0, 0.8);
 
   h2 {
     @include relative-font-size(2);
