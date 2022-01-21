@@ -188,7 +188,7 @@
 }
 
 .post {
-  width: 80%
+  width: 100%
 }
 
 .post-list-heading {
@@ -348,4 +348,30 @@
 
 .articles {
   // border: solid;
+}
+
+.article-list {
+  // border: solid;
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  text-align:center;
+  height: 50px;
+}
+
+.article-list time{
+  // background-color: red;
+  display:inline-block;
+  line-height: 50px;
+}
+
+.article-list h2 {
+  // background-color: green;
+  text-align: left;
+  margin: 0;
+  line-height: 50px;
+}
+
+.utterances {
+  max-width: 100% !important;
 }
