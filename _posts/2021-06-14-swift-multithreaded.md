@@ -170,11 +170,3 @@ q.async {
     }
 }
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="kfxiaoxia/kfxiaoxia.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
