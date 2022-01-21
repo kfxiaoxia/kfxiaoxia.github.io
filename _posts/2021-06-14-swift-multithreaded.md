@@ -174,7 +174,6 @@ q.async {
 <script src="https://utteranc.es/client.js"
         repo="kfxiaoxia/kfxiaoxia.github.io"
         issue-term="pathname"
-        label="kfxiaoxia.com"
         theme="github-light"
         crossorigin="anonymous"
         async>
