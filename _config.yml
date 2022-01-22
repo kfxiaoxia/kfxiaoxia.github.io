@@ -23,7 +23,7 @@ email: kfxiaoxia@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   把程序写好
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "kfxiaoxia.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kfxiaoxia.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kfxiaoxia
 github_username: kfxiaoxia
 
@@ -31,6 +31,17 @@ github_username: kfxiaoxia
 theme: minima
 plugins:
   - jekyll-feed
+
+lsi: false
+safe: true
+source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
