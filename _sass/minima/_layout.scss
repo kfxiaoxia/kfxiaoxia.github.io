@@ -354,7 +354,7 @@
   // border: solid;
   margin-top: 8px;
   display: grid;
-  grid-template-columns: 15% 85% ;
+  grid-template-columns: 150px  310px ;
   text-align:center;
   height: 50px;
 }
@@ -363,6 +363,7 @@
   // background-color: red;
   display:inline-block;
   line-height: 50px;
+  // border: solid;
 }
 
 .article-list h2 {
@@ -370,6 +371,7 @@
   text-align: left;
   margin: 0;
   line-height: 50px;
+  // border: solid;
 }
 
 .utterances {
