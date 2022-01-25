@@ -22,7 +22,7 @@
   text-align: center;
   &,
   &:visited {
-    color: #a58638;
+    color: goldenrod;
   }
 
 }
@@ -305,15 +305,15 @@
 .bio {
   margin-top: 16px;
   font-size: 80px;
-  text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
-  // text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  // text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-align: center;
   font-weight: bold;
-  color: #a58638;
+  color: goldenrod;
   background-color:  #cacbd3;
   background-image: url("../../assets/imags/brick-wall-dark.png");
   border-radius: 8px;
-  border-color: #a58638;
+  border-color: goldenrod;
   border: solid;
   @media screen and (min-width: 320px) {
     font-size: 20px;
