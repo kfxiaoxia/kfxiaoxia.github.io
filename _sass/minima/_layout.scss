@@ -355,6 +355,7 @@
   margin-top: 8px;
   display: grid;
   grid-template-columns: 150px  310px ;
+  grid-template-rows: auto;
   text-align:center;
   height: 50px;
 }
@@ -373,6 +374,13 @@
   line-height: 50px;
   // border: solid;
 }
+
+// .article-tag {
+//   background-color: red;
+//   height: 20px;
+//   width: auto;
+//   border-radius: 10px;
+// }
 
 .utterances {
   max-width: 100% !important;
