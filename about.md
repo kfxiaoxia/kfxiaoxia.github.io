@@ -3,6 +3,7 @@ layout: about
 title: ABOUT
 permalink: /about/
 weight: 400
+published: false
 ---
 
 - 🖥 : A developer

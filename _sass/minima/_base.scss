@@ -76,6 +76,7 @@
  }
 
  li {
+   line-height: 32px;
    > ul,
    > ol {
      margin-bottom: 0;
@@ -146,6 +147,7 @@
    border: 1px solid $grey-color-light;
    border-radius: 3px;
    background-color: 011627;
+   line-height: 32px;
  }
 
  code {
