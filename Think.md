@@ -1,7 +1,7 @@
 ---
 layout: think
 title: THINK
-permalink: /Think/
+permalink: /think/
 published: true
 weight: 100
 ---
