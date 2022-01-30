@@ -3,8 +3,9 @@ layout: default
 ---
 
 <div class="wrapper">
-    <div class="bio">THINK HARD, <br>THINK DIFFERENT.</div>
-    <!-- <h3>RECENT UPDATES</h3> -->
+    <!-- <div class="bio">THINK HARD, <br>THINK DIFFERENT.</div> -->
+    <img class="banner" src="../assets/imags/banner.png" alt="">
+
     {% for post in site.posts %}
     <article class="article-list">
         <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>

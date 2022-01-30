@@ -310,9 +310,9 @@
   // text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-align: center;
   font-weight: bold;
-  color: goldenrod;
-  background-color:  #b3b3b3;
-  background-image: url("../../assets/imags/brick-wall-dark.png");
+  // color: goldenrod;
+  // background-color:  #b3b3b3;
+  // background-image: url("../../assets/imags/brick-wall-dark.png");
   border: solid;
   border-radius: 8px;
   border-color: goldenrod;
@@ -390,4 +390,11 @@
 
 p {
   line-height: 32px;
+}
+
+.banner {
+  border-radius: 8px;
+  margin-top: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
