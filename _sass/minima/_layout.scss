@@ -352,37 +352,19 @@
 }
 
 .article-list {
-
-  margin-top: 8px;
-  display: flex;
-  text-align:center;
-  height: 50px;
+  margin-top: 12px;
 }
 
 .article-list time{
-  display:inline-block;
-  line-height: 50px;
-  width: 120px;
-  // text-align: right;
-  // padding-right: 32px;
-  // border: solid;
+  text-align: left;
+  color: gray;
 }
 
 .article-list h2 {
-  // background-color: green;
   text-align: left;
-  margin: 0;
-  line-height: 50px;
   overflow: hidden;
-  // border: solid;
 }
 
-// .article-tag {
-//   background-color: red;
-//   height: 20px;
-//   width: auto;
-//   border-radius: 10px;
-// }
 
 .utterances {
   max-width: 100% !important;
