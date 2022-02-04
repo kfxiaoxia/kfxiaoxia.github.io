@@ -4,7 +4,7 @@ layout: default
 
 <div class="wrapper">
     <!-- <div class="bio">THINK HARD, <br>THINK DIFFERENT.</div> -->
-    <img class="banner" src="../assets/imags/banner.png" alt="">
+    <img class="banner" src="../assets/images/banner.png" alt="">
 
     {% for post in site.posts %}
     <article class="article-list">
@@ -14,6 +14,7 @@ layout: default
                 {{ post.title }}
             </a>
         </h2>
+
         <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
 
     </article>
