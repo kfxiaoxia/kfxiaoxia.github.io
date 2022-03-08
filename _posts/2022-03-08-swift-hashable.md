@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Hashable"
+title: "Swift Hashable"
 date: 2022-03-08 14:33:11 +0800
 categories: [article]
 tags: [Swift]
 published: true
 ---
 
-在 Swift 中可以使用自定义的类型作为字典的 key , 单需要遵循 Hashable 协议，Hashable
+在 Swift 中可以使用自定义的类型作为字典的 key , 但需要遵循 Hashable 协议，Hashable
 
 这是一个例子：
 
