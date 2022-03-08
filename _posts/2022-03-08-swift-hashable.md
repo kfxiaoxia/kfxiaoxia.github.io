@@ -16,7 +16,6 @@ struct Person: Hashable {
     let name: String
     let id: String
 
-
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -44,7 +43,7 @@ print(cars[Person(name: "Tom", id: "123x")])
 
 **hash(into:)** 方法可以根据 **id** 生成一个唯一的 hash
 
-```
+```swift
 func hash(into hasher: inout Hasher) {
     hasher.combine(id)
 }
