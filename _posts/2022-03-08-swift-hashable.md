@@ -11,7 +11,7 @@ published: true
 
 这是一个例子：
 
-```
+```swift
 struct Person: Hashable {
     let name: String
     let id: String
@@ -43,6 +43,7 @@ print(cars[Person(name: "Tom", id: "123x")])
 ```
 
 **hash(into:)** 方法可以根据 **id** 生成一个唯一的 hash
+
 ```
 func hash(into hasher: inout Hasher) {
     hasher.combine(id)
