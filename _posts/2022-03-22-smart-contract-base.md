@@ -82,6 +82,7 @@ contract Demo {
     function update(string memory _name, uint  _age) public returns(bool) {
         p.name = _name;
         p.age = _age;
+        return true;
     }
 }
 // 外部函数  pure 表示不得修改变量（以后的文章会细讲）
