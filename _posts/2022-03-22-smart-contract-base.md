@@ -2,7 +2,7 @@
 layout: post
 title: "Smart Contract Introduction"
 date: 2022-03-11 21:44:00 +0800
-categories: [article]
+categories: [web3]
 tags: [Smart Contract]
 published: true
 ---
