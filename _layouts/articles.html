@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="wrapper">
+  <div class="articles top">
+    <h1>{{page.title}}</h1>
+    {% for post in site.posts %}
+    <!-- <div>{{post.categories | inspect}}</div> -->
+    {% if post.categories contains "article" %}
+    <article class="article-list">
+      <h2>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+
+    </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
